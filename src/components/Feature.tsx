@@ -2,18 +2,18 @@ function Feature() {
   const features = [
     {
       num: '01',
-      title: 'Built for speed',
-      desc: 'Fast load times and clean code, no bloat slowing things down.',
+      title: 'Built for comfort',
+      desc: 'Cushioned soles and breathable materials made for all-day wear.',
     },
     {
       num: '02',
       title: 'Made to move',
-      desc: 'Responsive across devices, from phone to widescreen.',
+      desc: 'Flexible support built for running, training, or just the daily grind.',
     },
     {
       num: '03',
       title: 'No shortcuts',
-      desc: 'Every detail considered, from spacing to motion.',
+      desc: 'Every stitch considered, from the sole up to the laces.',
     },
   ]
 
