@@ -1,8 +1,12 @@
+import { Link } from 'react-router-dom';
 import heroImg from '../assets/nke-removebg-preview.png';
 
 function Hero() {
   return (
-    <section className="relative z-[1] flex min-h-[calc(100vh-72px)] flex-col justify-center gap-0 px-8 lg:flex-row lg:items-center lg:justify-between">
+    <section 
+      id="home" 
+      className="relative z-[1] flex min-h-[calc(100vh-72px)] flex-col justify-center gap-0 px-8 lg:flex-row lg:items-center lg:justify-between scroll-mt-[72px]"
+    >
       {/* Content Column */}
       <div className="max-w-[560px]">
         <div className="mb-5 flex items-center gap-3">
@@ -22,12 +26,12 @@ function Hero() {
         </p>
 
         <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-5">
-          
-           <a href="#products"
-            className="rounded-full bg-neutral-100 px-8 py-4 text-sm font-bold uppercase tracking-wide text-neutral-950 transition-all duration-200 hover:-translate-y-0.5 hover:bg-lime-300"
-          >
-            Shop Now
-          </a>
+         <Link 
+  to="/products" // Update this to match your route path (e.g., /shop, /products)
+  className="rounded-full bg-neutral-100 px-8 py-4 text-sm font-bold uppercase tracking-wide text-neutral-950 transition-all duration-200 hover:-translate-y-0.5 hover:bg-lime-300"
+>
+  Shop Now
+</Link>
         </div>
       </div>
 
@@ -39,14 +43,6 @@ function Hero() {
           alt="Featured shoe"
           className="relative w-full scale-105 -rotate-6 transition-transform duration-500 ease-out hover:scale-110 hover:rotate-0"
         />
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 right-8 hidden flex-col items-center gap-2 sm:flex">
-        <span className="text-[11px] font-semibold uppercase tracking-[0.15em] text-neutral-600">
-          Scroll
-        </span>
-        <span className="h-10 w-px animate-pulse bg-neutral-700" />
       </div>
     </section>
   );
